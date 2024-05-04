@@ -36,7 +36,7 @@ Inventory:
 - Check items are sort by A to Z.
 - Check items are sort by Z to A.
 
-Nav items:
+Sidebar items:
 - Check that Log out button works as expected.
 - Check that About us button works as expected.
 - Check that Reset app button works as expected.
