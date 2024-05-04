@@ -3,15 +3,24 @@ Cypress UI automated tests using this page: https://www.saucedemo.com/.
 **Tests that had been already implemented ✅:**
 
 Login section (CODE REFERENCE: FEATURE-1):
+
 ✅ Login successfully as standard user.(CODE REFERENCE: TC-1).
+
 ✅ User is not able to log in with empty username and password.(CODE REFERENCE: TC-2).
+
 ✅ User is not able to log in with empty username.(CODE REFERENCE: TC-3).
+
 ✅ User is not able to log in with empty password.(CODE REFERENCE: TC-4).
 
+
 Inventory section (CODE REFERENCE: FEATURE-2):
+
 ✅ Items are sort by price Low to High. (CODE REFERENCE: TC-1).
+
 ✅ Items are sort by price High to Low. (CODE REFERENCE: TC-2).
+
 ✅ Specific card content, the first one displayed. (CODE REFERENCE: TC-3).
+
 
 Other sections:
 
