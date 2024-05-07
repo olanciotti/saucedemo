@@ -21,6 +21,9 @@ Inventory section (CODE REFERENCE: FEATURE-2):
 
 ✅ Specific card content, the first one displayed. (CODE REFERENCE: TC-3).
 
+Side Bar options (CODE REFERENCE: FEATURE - 3).
+
+✅ Check that Log out button works as expected. (CODE REFERENCE: TC-1).
 
 Other sections:
 
@@ -37,7 +40,6 @@ Inventory:
 - Check items are sort by Z to A.
 
 Sidebar items:
-- Check that Log out button works as expected.
 - Check that About us button works as expected.
 - Check that Reset app button works as expected.
 - Check that All items works as expected.
