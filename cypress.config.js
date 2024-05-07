@@ -5,6 +5,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    chromeWebSecurity: false,
+    retries: {
+      runMode: 2,
+      openMode: 2
+    }
+    
   },
   env: {
     baseUrl: "https://www.saucedemo.com/",

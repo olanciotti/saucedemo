@@ -1,10 +1,11 @@
 /// <reference types="cypress" />
 
 import Login from "../support/pages/login";
+import Sidebar from "../support/pages/sidebar";
 import assertInventory from "../support/assertPages/assertInventory";
 import inventory from "../support/pages/inventory";
 
-describe("Inventory - Grid of products", () => {
+describe('Inventory - Grid of products', () => {
   
   beforeEach(() => {
     cy.window().then((win) => {
@@ -13,10 +14,10 @@ describe("Inventory - Grid of products", () => {
   })
 
   afterEach(() => {
-    localStorage.clear()
+    localStorage.clear();
   })
 
-  it("should check that Inventory page is displayed successfully", () => {
+  it('Should check that Inventory page is displayed successfully', () => {
     cy.visit(Cypress.env("baseUrl"));
     Login.completeUsername(Cypress.env("standardUser"));
     Login.completePassword(Cypress.env("password"));
@@ -25,7 +26,8 @@ describe("Inventory - Grid of products", () => {
     assertInventory.checkItemsNumber('6');
   })
 
-  it("should check that the card Sauce Labs Backpack is displayed successfully", () => {
+  //FEATURE-2-TC-3
+  it('Should check that the card Sauce Labs Backpack is displayed successfully', () => {
     cy.visit(Cypress.env("baseUrl"));
     Login.completeUsername(Cypress.env("standardUser"));
     Login.completePassword(Cypress.env("password"));
@@ -33,7 +35,8 @@ describe("Inventory - Grid of products", () => {
     assertInventory.checkSauceLabsBackpackItemContent();
   })
 
-  it("should check that items are order by Price Low to High", () => {
+  //FEATURE-2-TC-1
+  it('Should check that items are order by Price Low to High', () => {
     cy.visit(Cypress.env("baseUrl"));
     Login.completeUsername(Cypress.env("standardUser"));
     Login.completePassword(Cypress.env("password"));
@@ -42,7 +45,8 @@ describe("Inventory - Grid of products", () => {
     assertInventory.checkPriceIsSortLowToHigh();
   })
 
-  it("should check that items are order by Price High to Low", () => {
+  //FEATURE-2-TC-2
+  it('Should check that items are order by Price High to Low', () => {
     cy.visit(Cypress.env("baseUrl"));
     Login.completeUsername(Cypress.env("standardUser"));
     Login.completePassword(Cypress.env("password"));

@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://www.saucedemo.com/",
+    "baseUrl": "https://www.saucedemo.com",
     "standardUser": "standard_user", 
     "lockedUser": "locked_out_user",
     "problemUser": "problem_user",
